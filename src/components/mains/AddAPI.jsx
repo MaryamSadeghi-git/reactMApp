@@ -5,7 +5,9 @@ import { Link, Navigate } from "react-router-dom";
 import { BiCaretRightSquare } from "react-icons/bi";
 export default function AddAPI() {
   const [navigate, setNavigate] = useState(false);
+
   async function handleChange(formData) {
+    document.querySelector("#formOfAdd").reset();
     await axios
       .post(`http://localhost:3000/posts`, {
         title: formData.get("title"),
@@ -27,15 +29,25 @@ export default function AddAPI() {
           id="formOfAdd"
           autoComplete="off"
         >
-          <label>title :</label>
-          <input type="text" name="title" required />
-          <label>describtion:</label>
-          <input type="text" name="desc" required />
-          <label>address:</label>
-          <input type="text" name="address" required />
-          <label>price:</label>
-          <input name="price" type="number" required />
-          <br />
+          <label>
+            title :<input type="text" name="title" required />
+          </label>
+
+          <label>
+            describtion:
+            <input type="text" name="desc" required />
+          </label>
+
+          <label>
+            address:
+            <input type="text" name="address" required />
+          </label>
+
+          <label>
+            price:
+            <input name="price" type="number" required />
+          </label>
+
           <button className="addbtn" type="submit">
             send
             {navigate && <Navigate to={"/"} />}

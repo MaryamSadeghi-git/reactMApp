@@ -1,16 +1,17 @@
 .delete-button{
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: red;
-    font-size: 18px;
-    background-color: transparent;
+    display: flex;
     position: absolute;
-    top: 2px;
-    left: 5px;
-    padding:5px  5px 0 0;
+    border-style: none;
+    cursor: pointer;
+    color: rgb(235, 7, 7);
+    font-size: 27px;
+    justify-content: center;
+    background-color: transparent;
+    padding:2px;
 }
 .delete-button:hover{
-    font-size: 22px;
+    background-color: rgb(235, 7, 7);
+    color: #fff;
+    font-size: 30px;
     transition: all .1s;
 }

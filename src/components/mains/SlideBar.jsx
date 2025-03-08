@@ -10,7 +10,6 @@ export default function SlideBar() {
   };
   return (
     <>
-      {/* <div className={menuIcon ? "changeWidthMain" : "NavBar-main"}> */}
       <div className={menuIcon ? "changeWidthBox" : "NavBar-left"}>
         <div
           onClick={signMenu}
@@ -29,10 +28,9 @@ export default function SlideBar() {
 
         <div className={menuIcon ? "hideAddElement" : "Add-menu-button"}>
           <Link to={"/Add"}>
-            <button>Add A CARD</button>
+            <button className="addBTN">Add A CARD</button>
           </Link>
         </div>
-        {/* </div> */}
       </div>
     </>
   );

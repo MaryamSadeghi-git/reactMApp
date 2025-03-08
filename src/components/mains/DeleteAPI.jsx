@@ -7,9 +7,6 @@ export default function DeleteAPI({ render, id }) {
     await axios.delete(`http://localhost:3000/posts/${id}`);
     render();
   }
-
-  //   }
-
   return (
     <>
       <button className="delete-button" onClick={() => HandleDelete()}>

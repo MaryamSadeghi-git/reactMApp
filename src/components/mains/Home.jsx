@@ -1,13 +1,15 @@
 import { Link, useSearchParams } from "react-router-dom";
 import GetAPI from "./GetAPI";
 import "../../Css/Home.css";
-import SlideBar from "./SlideBar.jsx";
+import Header from "./Header.jsx";
 export default function Home() {
   return (
     <>
-      <SlideBar />
       <div className="container-main">
-        <div className="cards-contant">
+        <div className="container-slide-bar">
+          <Header />
+        </div>
+        <div className="main-contant">
           <GetAPI />
         </div>
       </div>

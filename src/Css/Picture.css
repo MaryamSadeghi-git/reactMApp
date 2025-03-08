@@ -1,0 +1,23 @@
+.card-header .card-button{
+    border-style: none;
+    background-color: transparent;
+    color: #f8f8f8;
+    font-size: 30px;
+    position: absolute;
+    top: 74px;
+}
+.card-header .card-button:hover{
+    font-size: 32px;
+    color: #000000;
+}
+.card-header .left{
+    left: 0px;
+}
+.card-header .right{
+    right: 0px;
+}
+.pic-of-struct{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

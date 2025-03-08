@@ -1,51 +1,58 @@
 .form-edit{
-    background-color: rgb(111, 111, 195);
-    display:flex;
+    display: block;
+    margin:90px auto;
+    width: 350px;
+    height: 370px;
+    box-sizing: content-box;
     position: fixed;
-    height: fit-content;
-    /* justify-content: center; */
-     padding: 2px;
-    border-radius: 5px;
-    z-index: 1; 
+    background-color: burlywood;
+    border-radius: 4px;
+    padding: 20px;
+    color: #212020;
+    z-index: 1;
 }
 .form-edit form{
-    /* width: 300px;
-    height: 300px;
     display: flex;
-    padding: 3px;
-    flex-direction:column; */
+    margin-top: 25px;
+    flex-direction: column;
 }
-.form-edit label{
- color: #333;
- padding-left: 40px;
+.form-edit form input{
+    border-style: none;
+    outline: none;
+    box-shadow: 1px 2px 3px .5px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px;
 }
-.form-edit input{
-    display: block;
-    align-self: center;
-    width: 200px;
-    height: 20px;
-    margin: auto;
+.form-edit form label{
+    font-size: 18px;
+}
+.form-edit .buttonEdit{
     border: none;
     outline: none;
-    padding: 5px;
-    margin: 2px;
-    color: #333;
-    border-radius: 3px;
+    padding: 10px;
+    width: 330px;
+    margin:20px auto;
+    box-shadow: 1px 2px 3px .5px;
 }
-.form-edit label{
-    margin: 5px;
-    color: #222;
-}
-.form-edit button{
-    border: none; 
-    padding: 5px 30px;
-    border-radius:2px ;
-    outline: none;
-    margin: 5px;
-    color: #333;
-}
-.form-edit button:hover{
+.form-edit .buttonEdit:hover{
+    background-color: #2f2e2e;
     color: #fff;
-    background-color: #333;
-    transition: all .2s;
+    transition: all .5s;
+}
+.form-edit .deletebutton{
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-size: 30px;
+    border: none;
+    padding: 5px;
+display: flex;   
+color: red;
+ background-color: transparent;
+}
+.form-edit .deletebutton:hover{
+    background-color: rgb(235, 7, 7);
+    color: #fff;
+    transition: all .1s;
 }

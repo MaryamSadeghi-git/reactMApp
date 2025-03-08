@@ -1,71 +1,48 @@
 .card-container{
-    position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0px auto 20px;
-    box-sizing: content-box;
-    box-shadow: 2px 0px 10px .2px;
-    border-radius: 3px;  
+    width: 250px;
+    height: 400px;
+    box-sizing: border-box; 
+    margin: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px 4px gray;
 }
-.card-header .card-pictuer{
-    background-color: green;
+.card-container .card-header{
+    height: 45%;
     position: relative;
-    width: 200px;
-    height: 150px;
-    box-sizing: border-box;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    
 }
-.card-information form input{
-    border: none;
-    outline: none;
-    width: 180px;
-    height: 20px;
-    margin: auto;
-    padding: 2px;
-    color: #333;
-    display: block;
-    background-color: transparent;
-}
-.card-button{
-    border: none;
-    background-color: transparent;
-    color: #333;
-    position: absolute;
-    bottom:  62px;
-}
-.card-pictuer .right{
-    right: 0;
-}
-.card-button:hover{
-    color: aliceblue;
-    font-size: 18px;
-    transition: all .2s;
-    bottom: 58px;
-}
-.card-footer {
-    position: relative;
-    width: 200px;
-    height: 100px;
-    background-color: pink;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+.card-header .containerof-pic{
+    height: 100%;
 }
 .edit-button{
-    border: none;
-    cursor: pointer;
-    padding:5px 10px;
-    font-size: 16px;
-    color: #333;
-    background-color: #efeaea;
     position: absolute;
-    bottom: 5px ;
-    right: 10px;
-    border-radius:2px ;
+    right: 0px;
+    top: 4px;
+    border: none;
+    font-size: 23px;
+    color: #fff;
+    background-color: transparent;
 }
 .edit-button:hover{
-    color: #efeaea;
-    background-color: #333;
-    transition: all .2s;
+    color: #222;
+}
+
+.card-container .card-footer{
+    flex-direction: column;
+    display: flex;
+    height: 55%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.card-footer .paragraf {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    display: inline;
+    width: 90%;
+    box-shadow: 1px 2px 5px 1px;
+    margin: 10px;
+    overflow-wrap: break-word;
 }

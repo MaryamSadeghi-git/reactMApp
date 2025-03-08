@@ -1,38 +1,44 @@
-.form-Add{
-    background-color: rgb(175, 175, 208);
-    display: block;
-    z-index: 1;
-    margin:80px auto  ; 
-    width: 200px;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 5px;
+.form-Add-main{
+  width: 33%;
+  height: 400px;
+  box-shadow: 3px 2px 6px .9px gray;
+  margin:10vw auto;
+  background-color: #cacaca;
+  box-sizing: border-box;
 }
-.form-Add input{
-    margin: auto;
-    border: none;
-    outline: none;
-    padding: 5px;
-    margin: 3px;
-    color: #333;
-    border-radius: 3px;
+.form-Add-main .form-Add{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin: 10px;
 }
-.form-Add label{
-    margin: 5px;
-    color: #222;
+.form-Add-main input{
+  border: 1px solid gray;
+  outline: none;
+  font-size: 16px;
+  padding: 7px;
+  margin: 5px;
+  color: #333;
 }
-.form-Add .addbtn{
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-    margin: 4px;
-    color: #333;
-    border-radius: 3px;
+.form-Add-main label{
+  display: flex;
+  flex-direction: column;
+   width: 90%;
+  color: #333;
+  font-size: 18px;
 }
-.form-Add .addbtn:hover{
-    color: #fff;
-    background-color: #333;
-    transition: all .2s;
+.form-Add-main .addbtn{
+  border: none;
+  box-shadow: 2px 2px 6px .9px;
+  border-radius: 2px;
+  width: 95%;
+  padding: 8px;
+  margin:35px 0px 0px 6px;
+}
+.form-Add-main .addbtn:hover{
+  background-color: #333;
+  color: #fff;
 }
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;

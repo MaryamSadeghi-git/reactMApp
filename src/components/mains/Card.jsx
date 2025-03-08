@@ -2,48 +2,39 @@ import DeleteAPI from "./DeleteAPI";
 import EditAPI from "./EditAPI";
 import "../../Css/Card.css";
 import { useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { FaEdit } from "react-icons/fa";
+import Picture from "./Picture";
 
 export default function Card(props) {
   const [toggle, setToggle] = useState(true);
+  const [passId, setPassId] = useState([]);
 
   return (
     <>
       <div className="card-container">
         <div className="card-header">
-          <div className="card-pictuer">
-            <br />
-            <DeleteAPI id={props.id} render={props.render} />
-            <img src="" />
-            <button className="card-button left">
-              <FaChevronLeft />
-            </button>
-            <button className="card-button right">
-              <FaChevronRight />
-            </button>
-          </div>
-        </div>
-        <div className="card-footer">
-          <div className="card-information">
-            <form id="formOfCard" autoComplete="off">
-              <input value={props.title} />
-              <input value={props.desc} />
-              <input value={props.address} />
-              <input value={props.price} />
-            </form>
-          </div>
+          <DeleteAPI id={props.id} render={props.render} />
           <button
             className="edit-button"
             onClick={() => {
-              toggle && setToggle(false);
+              toggle && setToggle(false), setPassId(props.id);
             }}
           >
-            edit
+            <FaEdit />
           </button>
+          <div className="containerof-pic">
+            <Picture />
+          </div>
+        </div>
+        <div className="card-footer ">
+          <p className="paragraf">{props.title} </p>
+          <p className="paragraf">{props.desc} </p>
+          <p className="paragraf">{props.address}</p>
+          <p className="paragraf">{props.price} </p>
         </div>
       </div>
       {toggle !== true && (
-        <EditAPI props={props} render={props.render} showEdit={setToggle} />
+        <EditAPI id={passId} props={props} showEdit={setToggle} />
       )}
     </>
   );

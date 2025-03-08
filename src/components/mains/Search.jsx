@@ -18,6 +18,9 @@ export default function Search({ data, render }) {
   return (
     <>
       <div className="container-search">
+        <button className="btn-search">
+          <IoSearch />
+        </button>
         <input
           className="search-box"
           placeholder="search"
@@ -26,9 +29,6 @@ export default function Search({ data, render }) {
             setSearch(e.target.value);
           }}
         />
-        <div className="search-icon">
-          <IoSearch />
-        </div>
       </div>
       <div className="container-cards">
         {dataFiltered !== undefined &&
