@@ -1,0 +1,60 @@
+.NavBar-left{
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    transition:all .5s ease-in-out;
+    position: fixed;
+    background-color: rgba(30, 30, 30, 0.8);
+}
+.changeWidthBox{
+    background-color: transparent;
+    width: 0px;
+    transition:all 1s ease-out;
+}
+.active{
+    z-index: 1;
+    transition: all .5s;
+    position: fixed;
+    right: 10px;
+    color: #333;
+    padding: 20px 0px 10px 10px;
+    font-size: 35px;
+}
+.notActive{
+    position: fixed;
+    right: 10px;
+    rotate: 60deg;
+    z-index: -1;
+    transition: all .5s;
+    color: transparent;
+    padding: 10px 0px 10px 10px;
+}
+.active:hover{
+    color: #222;
+    transition: all .5s;
+}
+.Add-menu-button{
+    width: 100%;
+    transition:all 1s;
+}
+.Add-menu-button button{
+    border: none;
+    width: 100%;
+    padding: 5px 8px;
+    margin: 80px 0px;
+    border-radius: 3px;
+}
+.Add-menu-button button:hover{
+    background-color: #555;
+    color: #fff;
+    transition: all 1s;
+}
+.hideAddElement{
+    display: none;
+    transition:all 1s;
+}

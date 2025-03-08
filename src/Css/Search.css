@@ -1,0 +1,40 @@
+.container-search{
+position: relative;
+}
+.search-box{
+border: none;
+outline: none;
+cursor: pointer;
+background-color: #333;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+padding: 5px;
+margin: 5px;
+transition: all .5s ease-in-out;
+}
+.search-icon{
+cursor: pointer;
+color: #fff;
+position: absolute;
+font-size: 18ps;
+top: 22px;
+left: 22px;
+}
+.search-box::placeholder{
+    color:rgba(166, 159, 159, 0.5);
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+.search-box:focus{
+    width: clamp(50px , 150px , 300px);
+    border-radius:0px ;
+}
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0px 15px;
+    padding:20px ;
+}

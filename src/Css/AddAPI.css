@@ -1,0 +1,39 @@
+.form-Add{
+    background-color: rgb(175, 175, 208);
+    display: block;
+    z-index: 1;
+    margin:80px auto  ; 
+    width: 200px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form-Add input{
+    margin: auto;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 3px;
+    color: #333;
+    border-radius: 3px;
+}
+.form-Add label{
+    margin: 5px;
+    color: #222;
+}
+.form-Add .addbtn{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    margin: 4px;
+    color: #333;
+    border-radius: 3px;
+}
+.form-Add .addbtn:hover{
+    color: #fff;
+    background-color: #333;
+    transition: all .2s;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
